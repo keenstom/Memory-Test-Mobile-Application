@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".giris">
+
+    <EditText
+        android:id="@+id/girisInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kullanıcı Adı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sifreInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="123456789"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisInput" />
+
+    <TextView
+        android:id="@+id/girisTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="12dp"
+        android:text="Kullanıcı Adı:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/girisInput"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="96dp"
+        android:text="Şifre:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/sifreInput"
+        app:layout_constraintStart_toStartOf="@+id/girisTextView"
+        app:layout_constraintTop_toBottomOf="@+id/girisTextView" />
+
+    <Button
+        android:id="@+id/girisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Giriş Yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreInput" />
+
+    <Button
+        android:id="@+id/kayitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Kayıt Yap"
+        app:layout_constraintEnd_toStartOf="@+id/girisButton"
+        app:layout_constraintTop_toTopOf="@+id/girisButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
